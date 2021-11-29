@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Profile</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style type="text/css">
+        body{ font: 14px sans-serif; }
+        .wrapper{ width: 350px; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+		<div class="jumbotron" style="margin-top: 50px;">
+			<h2 class="text-center">Doctor Profile</h2>
+			<div class="row">
+				<div class = "col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<p>
+						<br /><br /><br /><br />
+						<img src="./images/Appointments.jpg" style="height: 200px; width: 100%" />
+					</p>
+				</div>
+				<div class = "col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<form method="post">
+						<div class="form-group">
+							<label>Name</label>
+							<input type="text" name="username" class="form-control" >
+							<span class="help-block"></span>
+						</div>    
+						<div class="form-group">
+							<label>Gender</label><br />
+							<label class="radio-inline"><input type="radio" name="gender">&nbsp;Male</label>&nbsp;&nbsp;
+							<label class="radio-inline"><input type="radio" name="gender">&nbsp;Female</label>
+							<span class="help-block"></span>
+						</div>  
+						<div class="form-group">
+							<label>Date of Birth</label>
+							<input type="date" name="username" class="form-control" >
+							<span class="help-block"></span>
+						</div> 
+						<div class="form-group">
+							<label>Address</label>
+							<textarea class="form-control"></textarea>
+							<span class="help-block"></span>
+						</div>
+						<div class="form-group">
+							<label>Mobile Number</label>
+							<input type="text" name="password" class="form-control">
+							<span class="help-block"></span>
+						</div>
+						<div class="form-group">
+							<label>Email Address</label>
+							<input type="email" name="password" class="form-control">
+							<span class="help-block"></span>
+						</div>
+						<div class="form-group">
+							<label>Availability</label><br />
+							<label class="radio-inline"><input type="radio" name="availability">&nbsp;Full-time</label>&nbsp;&nbsp;
+							<label class="radio-inline"><input type="radio" name="availability">&nbsp;Part-time</label>
+							<span class="help-block"></span>
+						</div> 
+						<div class="form-group">
+							<label>Department</label>
+							<select name="usertype" class="custom-select">
+								<option selected>- Select Department -</option>
+								<option value="Accident and emergency ">Accident and emergency </option>
+								<option value="Anesthetics">Anesthetics</option>
+								<option value="Cardiology">Cardiology</option>
+								<option value="Dental">Dental</option>
+							  </select>							
+							<span class="help-block"></span>
+						</div>  
+						<div class="form-group">
+							<label>Speciality</label>
+							<input type="email" name="password" class="form-control">
+							<span class="help-block"></span>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-primary" value="Save Profile">
+							<input type="submit" class="btn btn-warning" value="Cancel">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+    </div>    
+</body>
+</html>
